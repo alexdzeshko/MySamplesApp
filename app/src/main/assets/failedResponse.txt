@@ -1,0 +1,50 @@
+{
+  "apiError": {
+    "failureResponseObject": {
+      "failedBetslip": {
+        "failedBet": [
+          {
+            "detail": [
+              {
+                "selectionKey": 392892125,
+                "selectionName": "Lochnell",
+                "numPrice": 9,
+                "eventKey": 219911424,
+                "denPrice": 1,
+                "errorCode": "BETTING-SELECTION-SUSPENDED",
+                "errorDescription": "A selection in the request is suspended",
+                "eventName": "13:10"
+              },
+              {
+                "selectionKey": 392892125,
+                "selectionName": "Lochnell",
+                "numPrice": 9,
+                "eventKey": 219911424,
+                "denPrice": 1,
+                "errorCode": "BETTING-EVENT-STARTED",
+                "errorDescription": "The event has started",
+                "eventName": "13:10"
+              }
+            ],
+            "betNo": 0
+          },
+          {
+            "detail": {
+              "selectionKey": 392892139,
+              "selectionName": "Presently Tipsy",
+              "numPrice": 80,
+              "eventKey": 219911425,
+              "denPrice": 1,
+              "errorCode": "BETTING-PRICE-CHANGED",
+              "errorDescription": "A price has changed since you added it to your slip",
+              "eventName": "13:40"
+            },
+            "betNo": 1
+          }
+        ],
+        "isBetValid": false
+      }
+    },
+    "responseStatusCode": 409
+  }
+}

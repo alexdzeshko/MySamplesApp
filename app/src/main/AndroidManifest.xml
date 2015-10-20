@@ -1,0 +1,55 @@
+<manifest
+    package="com.epam.dziashko.aliaksei.mysamplesapp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!--<uses-permission android:name="android.permission.MANAGE_ACCOUNTS"/>-->
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS"/>
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".expandable_panel.ExpandViewActivity"/>
+        <activity android:name=".gson.GsonTestActivity"/>
+        <activity android:name=".header_list_view.HidingHeaderListActivity"/>
+        <activity android:name=".activity.BlankActivity"/>
+        <activity android:name=".activity.AccManagerActivity"/>
+        <activity android:name=".expandable_panel.ExpandLayoutActivity"/>
+        <activity android:name=".scroll_wheel.ScrollingWheelActivity"/>
+        <activity android:name="com.example.android.interactivechart.ChartActivity"/>
+        <activity android:name="com.example.android.customviews.PieChartActivity"/>
+        <activity android:name=".rx.RxActivity"/>
+
+        <activity android:name="com.vk.sdk.VKOpenAuthActivity"/>
+        <activity
+            android:name="com.vk.sdk.VKServiceActivity"
+            android:label="ServiceActivity"
+            android:theme="@style/VK.Transparent"/>
+
+        <service
+            android:name=".acc_manager.AuthService"
+            android:permission="">
+            <intent-filter>
+                <action android:name="android.accounts.AccountAuthenticator"/>
+            </intent-filter>
+            <meta-data
+                android:name="android.accounts.AccountAuthenticator"
+                android:resource="@xml/authenticator"/>
+        </service>
+
+    </application>
+
+</manifest>

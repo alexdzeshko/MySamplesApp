@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ExpandablePanel">
+        <attr name="handle" format="string"/>
+        <attr name="content" format="string"/>
+        <attr name="collapsedHeight" format="dimension"/>
+        <attr name="animationDuration" format="integer"/>
+        <attr name="state" format="enum">
+            <enum name="collapsed" value="0"/>
+            <enum name="expanded" value="1"/>
+        </attr>
+        <attr name="expanded" format="boolean"/>
+        <attr name="contentClickable" format="boolean"/>
+    </declare-styleable>
+    <declare-styleable name="InteractiveLineGraphView">
+        <attr name="labelTextSize" format="dimension" />
+        <attr name="labelTextColor" format="color" />
+        <attr name="labelSeparation" format="dimension" />
+        <attr name="axisThickness" format="dimension" />
+        <attr name="axisColor" format="color" />
+        <attr name="dataThickness" format="dimension" />
+        <attr name="dataColor" format="color" />
+        <attr name="gridThickness" format="dimension" />
+        <attr name="gridColor" format="color" />
+    </declare-styleable>
+    <declare-styleable name="PieChart">
+        <attr name="autoCenterPointerInSlice" format="boolean"/>
+        <attr name="highlightStrength" format="float"/>
+        <attr name="labelColor" format="color"/>
+        <attr name="labelHeight" format="dimension"/>
+        <attr name="labelPosition" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="right" value="1"/>
+        </attr>
+        <attr name="labelWidth" format="dimension"/>
+        <attr name="labelY" format="dimension"/>
+        <attr name="pieRotation" format="integer"/>
+        <attr name="pointerRadius" format="dimension"/>
+        <!--<attr name="showText" format="boolean"/>-->
+    </declare-styleable>
+</resources>

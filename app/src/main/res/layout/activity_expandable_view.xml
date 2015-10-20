@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <com.epam.dziashko.aliaksei.mysamplesapp.expandable_panel.ExpandablePanel
+            android:id="@+id/panel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:handle="handle"
+            app:content="content"
+            android:background="#61d3">
+
+            <Button
+                android:id="@+id/expand"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Expand"
+                android:tag="handle"/>
+
+            <LinearLayout
+                android:id="@+id/content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expand"
+                android:orientation="vertical"
+                android:tag="content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="placeholder_textaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textSize="20sp"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="placeholder_textaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textSize="20sp"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+        </com.epam.dziashko.aliaksei.mysamplesapp.expandable_panel.ExpandablePanel>
+
+        <com.epam.dziashko.aliaksei.mysamplesapp.expandable_panel.ExpandablePanel
+            android:id="@+id/panel2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:handle="handle"
+            app:content="content"
+            android:background="#61d3">
+
+            <Button
+                android:id="@+id/expand2"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Expand"
+                android:tag="handle"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/expand2"
+                android:orientation="vertical"
+                android:tag="content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="placeholder_textaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textSize="20sp"
+                    android:padding="16dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="placeholder_textaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                    android:textSize="20sp"
+                    android:padding="16dp"/>
+            </LinearLayout>
+
+        </com.epam.dziashko.aliaksei.mysamplesapp.expandable_panel.ExpandablePanel>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_text"
+            android:textSize="20sp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+</ScrollView>
